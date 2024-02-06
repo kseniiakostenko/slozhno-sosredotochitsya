@@ -2,3 +2,67 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --main-font: "IBM Plex Mono";
+  --font-size-main: 18px;
+  --font-size-footer: 116px;
+  --background-image-set: url(/images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --shadow-color: #ff0070;
+  --head-color: #db00ff;
+  --title-color: rgba(255, 0, 112, 1);
+  --content-paragraf-color: #f1b2ce;
+  --link-shadow: #ff0070;
+  --background-color: #000028;
+  --accent-font: "STIX Two Text";
+  --offset: 10px;
+  --theme-menu-offset: 66px;
+  --theme-menu-gap: 17px;
+  --theme-menu-bottom: 66px;
+  --theme-menu-button-offset: 13px;
+  --font-weight-regular: 400;
+  --font-weight-wide: 700;
+  --line-height-regular: 18px;
+  --magrin-title-left: 0px;
+  --magrin-title-bottom: 55px;
+  --magrin-content-top: 40px;
+  --magrin-conten-bottom: 0px;
+  --content-section-bottom: 50px;
+  --theme-menu-color: rgba(255, 0, 112, 0.4);
+  --corners-size: 25px;
+  --decoration-size: 9px;
+  --heading-bottom: 56px;
+  --container-top: 10px;
+  --container-bottom: 40px;
+  --container-gap: 5px;
+  --text-block-top: 50px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --offset: 20px;
+    --magrin-content-top: 60px;
+    --theme-menu-offset: 173px;
+    --theme-menu-bottom: 184px;
+    --theme-menu-gap: 13px;
+    --magrin-title-left: -20px;
+    --magrin-title-bottom: 162px;
+    --magin-content: 60px;
+    --heading-bottom: 160px;
+    --content-section-bottom: 79px;
+    --container-top: 19px;
+    --container-gap: 17px;
+    --text-block-top: 80px;
+    --container-bottom: 51px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --theme-menu-offset: 0px;
+    --theme-menu-bottom: 275px;
+    --magrin-title-bottom: 114px;
+    --heading-bottom: 114px;
+  }
+}
