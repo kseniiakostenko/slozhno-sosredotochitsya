@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   width: 100%;
   min-height: 100vh;
-  position: relative;
+  position: absolute;
   background-image: var(--background-image-set);
   background-repeat: no-repeat;
   background-attachment: fixed;
