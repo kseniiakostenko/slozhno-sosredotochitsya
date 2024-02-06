@@ -13,8 +13,8 @@
 }
 
 .header {
-  width: 100vw;
-  min-height: 100vw;
+  width: 100%;
+  min-height: 100vh;
   padding: var(--offset);
   position: relative;
 }
@@ -225,8 +225,8 @@
 }
 
 .footer {
-  width: 100vw;
-  min-height: 100vw;
+  width: 100%;
+  min-height: 100vh;
   padding: var(--offset);
   position: relative;
 }
