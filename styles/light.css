@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: light) {
 :root {
       /* Дублируем переменные светлой темы */  
-      --background-image-set: url(/images/cover-image-light.png);   
+      --background-image-set: url(../images/cover-image-light.png);   
       --head-color: #FFC2E6; 
       --accent-color: #353430;
       --title-color: rgba(255, 141, 203, 1);
@@ -26,7 +26,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-image-set: url(/images/cover-image-light.png);   
+  --background-image-set: url(../images/cover-image-light.png);   
   --head-color: #FFC2E6; 
   --accent-color: #353430;
   --title-color: rgba(255, 141, 203, 1);
