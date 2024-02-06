@@ -11,6 +11,8 @@
 }
 
 .header {
+  width: 100%;
+  height: 100%;
   padding: var(--offset);
   position: relative;
 }
@@ -41,7 +43,6 @@
 
 .corners::before {
   content: "";
-  width: 100vw;
   top: var(--offset);
   right: var(--offset);
   width: var(--corners-size);
@@ -53,7 +54,6 @@
 
 .corners::after {
   content: "";
-  width: 100vw;
   bottom: var(--offset);
   left: var(--offset);
   width: var(--corners-size);
@@ -223,15 +223,16 @@
 }
 
 .footer {
+  width: 100%;
+  height: 100%;
   padding: var(--offset);
   position: relative;
 }
 
 .footer__title {
   margin: 276px 3px 275px 4px;
-  text-shadow: 2px 2px 0px #ff0070;
+  text-shadow: 2px 2px 0px var(--shadow-color);
   color: var(--head-color);
-  text-shadow: 2px 2px 0px #ff0070;
   font-family: var(--main-font);
   font-size: var(--font-size-footer);
   font-style: normal;
