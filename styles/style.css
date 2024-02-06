@@ -10,7 +10,7 @@
   background-image: var(--background-image-set);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -232,7 +232,7 @@
 
 .footer {
   width: 100%;
-  /*min-height: 100vh;*/
+  min-height: 100vh;
   padding: var(--offset);
   position: relative;
 }
