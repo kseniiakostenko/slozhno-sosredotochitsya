@@ -10,8 +10,8 @@
   background-image: var(--background-image-set);
   background-repeat: space;
   background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+  background-position: center;
+
 }
 
 .header {
