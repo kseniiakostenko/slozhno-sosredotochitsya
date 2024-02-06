@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  width: 100%;
+  /*width: 100%;
   min-height: 100vh;
   /*position: absolute;*/
   background-image: var(--background-image-set);
