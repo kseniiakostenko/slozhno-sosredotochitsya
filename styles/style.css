@@ -5,6 +5,7 @@
   /*width: 100%;
   min-height: 100vh;
   position: relative;*/
+  min-height: 100vh;
   background-image: var(--background-image-set);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -325,7 +326,7 @@
   }
 
   .container_picture {
-    height: 98%;
+    height: 100%;
   }
 
   .footer__title {
