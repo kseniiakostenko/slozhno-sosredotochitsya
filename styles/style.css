@@ -2,9 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  width: 100%;
+  /*width: 100%;
   min-height: 100vh;
-  position: relative;
+  position: relative;*/
   background-image: var(--background-image-set);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -95,6 +95,10 @@
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-regular);
   margin: 0 var(--theme-menu-button-offset) 0 var(--theme-menu-button-offset);
+}
+
+.header__theme-menu-button_active:active {
+  pointer-events: none;
 }
 
 .head_title {
