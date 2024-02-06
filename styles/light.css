@@ -17,6 +17,9 @@
     --content-paragraf-color: #353430;
     --link-shadow:  #FF8DCB;
     --theme-menu-color: rgba(50, 49, 45, 0.40);
+    --decoration-visibility: hidden;
+    --shadow-color: #FF0070;
+
   }
 }
 
@@ -30,5 +33,5 @@
   --link-shadow:  #FF8DCB;
   --decoration-visibility: hidden;
   --theme-menu-color: rgba(50, 49, 45, 0.40);
-
+  --shadow-color: #FF0070;
 }
