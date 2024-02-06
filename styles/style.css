@@ -2,6 +2,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  width: 100%;
+  height: 100%;
   position: relative;
   background-image: var(--background-image-set);
   background-repeat: no-repeat;
