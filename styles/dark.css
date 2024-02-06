@@ -19,10 +19,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
   :root {
-
-    --background-image-set: url(./images/cover-image-dark.png);   
+    --background-image-set: url(./images/cover-image-dark.png);
     --accent-color: #FF0070;
     --shadow-color: #FF0070;
     --head-color: #DB00FF;
