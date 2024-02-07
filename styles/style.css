@@ -7,8 +7,9 @@
   min-height: 100vh;
   position: relative;*/
   /*min-height: 100vh;*/
-  background-image: var(--background-image-set);
+  /*background-image: var(--background-image-set);*/
   /*background-repeat: no-repeat;*/
+  background-image: url(../images/cover-image-dark.png);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
