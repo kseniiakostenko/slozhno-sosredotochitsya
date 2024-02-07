@@ -19,7 +19,8 @@
     --theme-menu-color: rgba(50, 49, 45, 0.40);
     --decoration-visibility: hidden;
     --shadow-color: #FF0070;
-
+    --background-page-color: #FFF1F7;
+    ;
   }
 }
 
@@ -34,4 +35,6 @@
   --decoration-visibility: hidden;
   --theme-menu-color: rgba(50, 49, 45, 0.40);
   --shadow-color: #FF0070;
+  --background-page-color: #FFF1F7;
+  ;
 }
