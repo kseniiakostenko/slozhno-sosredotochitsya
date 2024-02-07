@@ -121,18 +121,6 @@
   background-color: var(--title-color);
 }
 
-.page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  /*width: 100%;
-  min-height: 100vh;
-  position: relative;*/
-  /*min-height: 100vh;*/
-  background-image: var(--background-image-set);
-  /*background-repeat: no-repeat;*/
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
 
 
 .content {
@@ -336,6 +324,20 @@
     margin: 443px 184px 442px 184px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+
+
+.page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  /*width: 100%;
+  min-height: 100vh;
+  position: relative;*/
+  /*min-height: 100vh;*/
+  background-image: var(--background-image-set);
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 
 }
 
