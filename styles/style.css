@@ -14,7 +14,7 @@
   background-size: cover;
 }
 
-.header {
+/*.header {
   width: 100%;
   min-height: 100vh;
   padding: var(--offset);
@@ -114,7 +114,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: var(--font-weight-wide);
-  line-height: 82.5%; /* 95.7px */
+  line-height: 82.5%; 
 }
 
 
@@ -124,14 +124,14 @@
   font-size: var(--font-size-main);
   font-style: normal;
   font-weight: var(--font-weight-wide);
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px; 
 }
 
 .title-decor {
   width: 100%;
   color: var(--background-color);
   background-color: var(--title-color);
-}
+}*/
 
 .content {
   color: var(--accent-color);
