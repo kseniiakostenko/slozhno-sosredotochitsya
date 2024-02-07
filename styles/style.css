@@ -131,7 +131,7 @@
   width: 100%;
   color: var(--background-color);
   background-color: var(--title-color);
-}*/
+}
 
 .content {
   color: var(--accent-color);
@@ -188,7 +188,7 @@
   font-size: var(--font-size-main);
   font-style: normal;
   font-weight: var(--font-weight-wide);
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px; 
 }
 
 .content-section .heading {
@@ -222,7 +222,7 @@
 
 .normal_font {
   font-weight: var(--font-weight-regular);
-}
+}*/
 
 .container_picture {
   width: 100%;
