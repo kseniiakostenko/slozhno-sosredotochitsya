@@ -14,7 +14,7 @@
   background-size: cover;
 }
 
-/*.header {
+.header {
   width: 100%;
   min-height: 100vh;
   padding: var(--offset);
@@ -222,11 +222,10 @@
 
 .normal_font {
   font-weight: var(--font-weight-regular);
-}*/
+}
 
-.container_picture {
+/*.container_picture {
   width: 100%;
-  /*height: 100%;*/
   object-fit: cover;
 }
 
@@ -245,7 +244,7 @@
   font-size: var(--font-size-footer);
   font-style: normal;
   font-weight: var(--font-weight-wide);
-  line-height: 82.5%; /* 95.7px */
+  line-height: 82.5%; 
 }
 
 .header__theme-menu-item:hover {
@@ -275,7 +274,7 @@
 
 .content_link:focus {
   border: 1px solid var(--content-paragraf-color);
-}
+}*/
 
 @media (min-width: 768px) {
 
