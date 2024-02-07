@@ -1,18 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 
-.page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  /*width: 100%;
-  min-height: 100vh;
-  position: relative;*/
-  /*min-height: 100vh;*/
-  background-image: var(--background-image-set);
-  /*background-repeat: no-repeat;*/
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
 
 .header {
   width: 100%;
@@ -132,6 +120,20 @@
   color: var(--background-color);
   background-color: var(--title-color);
 }
+
+.page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  /*width: 100%;
+  min-height: 100vh;
+  position: relative;*/
+  /*min-height: 100vh;*/
+  background-image: var(--background-image-set);
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 
 .content {
   color: var(--accent-color);
