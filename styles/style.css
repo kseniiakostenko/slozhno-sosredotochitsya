@@ -114,7 +114,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: var(--font-weight-wide);
-  line-height: 82.5%; 
+  line-height: 82.5%;
 }
 
 
@@ -124,7 +124,7 @@
   font-size: var(--font-size-main);
   font-style: normal;
   font-weight: var(--font-weight-wide);
-  line-height: 23.4px; 
+  line-height: 23.4px;
 }
 
 .title-decor {
