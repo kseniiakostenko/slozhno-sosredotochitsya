@@ -3,13 +3,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  /*width: 100%;
-  min-height: 100vh;
-  position: relative;*/
-  /*min-height: 100vh;*/
   background-image: var(--background-image-set);
   background-color: var(--background-page-color);
-  /*background-repeat: no-repeat;*/
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -306,10 +301,6 @@
   .container-content {
     width: 100%;
   }
-
-  /*.content .heading:last-of-type {
-    margin: 20px 0 0 0;
-  }*/
 
   .container-fist_type .heading:first-of-type:not(h4) {
     margin: 0 0 0 0;
