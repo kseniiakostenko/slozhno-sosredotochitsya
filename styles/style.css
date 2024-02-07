@@ -276,7 +276,7 @@
   border: 1px solid var(--content-paragraf-color);
 }
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
 
   .header .heading {
     width: 364px;
@@ -387,4 +387,4 @@
   .footer__title {
     margin: 299px 257px 299px 256px;
   }
-}*/
+}
