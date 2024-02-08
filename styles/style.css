@@ -86,6 +86,7 @@
 
 .header__theme-menu-button_active {
   border: none;
+  pointer-events: none;
 }
 
 .header__theme-menu-button {
@@ -244,17 +245,11 @@
   line-height: 82.5%; /* 95.7px */
 }
 
-.header__theme-menu-button:not(:active):hover {
-  box-shadow: 0 0 0 1px var(--accent-color-hover),
-    0 0 0 1px var(--accent-color-hover), 0 0 0 1px var(--accent-color-hover); /* Создаем обводку как у активной кнопки */
+.header__theme-menu-button:not(:active):hover::after {
+  content: none;
 }
 
-.header__theme-menu-item:focus {
-  border: none;
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button_active::before {
+.header__theme-menu-button_active::after {
   content: "";
   position: absolute;
   top: var(--button_active-top);
@@ -262,6 +257,20 @@
   right: var(--button_active-right);
   bottom: var(--button_active-bottom);
   border: 1px solid var(--accent-color);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button:not(:active):hover {
+  box-shadow: 0 0 0 1px var(--accent-color-hover);
+}
+
+.header__theme-menu-item:focus .header__theme-menu-button_active::after {
+  border: none;
 }
 
 .container-fist_type:not(:first-of-type) {
