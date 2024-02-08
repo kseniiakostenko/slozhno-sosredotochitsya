@@ -1,6 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--background-image-set);
@@ -27,7 +26,7 @@
   color: var(--accent-color);
   font-family: var(--main-font);
   font-size: var(--font-size);
-  line-height: var(--line-height-lagre); 
+  line-height: var(--line-height-lagre);
   font-weight: var(--font-weight-regular);
   letter-spacing: 1.4px;
 }
@@ -104,7 +103,6 @@
   padding: 0 var(--theme-menu-button-offset) 0 var(--theme-menu-button-offset);
 }
 
-
 .head_title {
   margin: 6px 0 var(--magrin-title-bottom) var(--magrin-title-left);
 }
@@ -118,7 +116,6 @@
   font-weight: var(--font-weight-wide);
   line-height: 82.5%;
 }
-
 
 .heading {
   width: 100%;
@@ -137,7 +134,8 @@
 
 .content {
   color: var(--accent-color);
-  padding: var(--magrin-content-top) var(--offset) var(--magrin-conten-bottom) var(--offset);
+  padding: var(--magrin-content-top) var(--offset) var(--magrin-conten-bottom)
+    var(--offset);
 }
 
 .content-section {
@@ -182,8 +180,6 @@
   margin: var(--text-block-top) 0 0 0;
 }
 
-
-
 .heading_main {
   width: 100%;
   font-family: var(--main-font);
@@ -200,7 +196,6 @@
 .content .content__text-block {
   margin: 10px 0 0 0;
 }
-
 
 .content__paragraph {
   color: var(--content-paragraf-color);
@@ -255,23 +250,23 @@
 }
 
 .header__theme-menu-button:not(:active):hover {
-  box-shadow: 0 0 0 1px var(--accent-color-hover), 0 0 0 1px var(--accent-color-hover), 0 0 0 1px var(--accent-color-hover); /* Создаем обводку как у активной кнопки */
+  box-shadow: 0 0 0 1px var(--accent-color-hover),
+    0 0 0 1px var(--accent-color-hover), 0 0 0 1px var(--accent-color-hover); /* Создаем обводку как у активной кнопки */
 }
 
-.header__theme-menu-item:focus{
+.header__theme-menu-item:focus {
   border: none;
   border-bottom: 1px solid var(--accent-color);
 }
 
-
 .header__theme-menu-button_active::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -1px;
   left: 0px;
   right: 0px;
   bottom: -7px;
-  border: 1px solid var(--accent-color); 
+  border: 1px solid var(--accent-color);
 }
 
 .container-fist_type:not(:first-of-type) {
@@ -295,7 +290,6 @@
 }
 
 @media (min-width: 768px) {
-
   .header .heading {
     width: 364px;
   }
@@ -349,13 +343,13 @@
   }
 
   .header__theme-menu-button_active::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -3px;
     left: 0px;
     right: 0px;
     bottom: -4px;
-    border: 1px solid var(--accent-color); 
+    border: 1px solid var(--accent-color);
   }
 }
 
@@ -416,12 +410,12 @@
   }
 
   .header__theme-menu-button_active::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -3px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    border: 1px solid var(--accent-color); 
+    border: 1px solid var(--accent-color);
   }
 }
