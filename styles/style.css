@@ -20,11 +20,16 @@
 .header_decoration::before {
   visibility: var(--decoration-visibility);
   content: "REC";
-  color: var(--accent-color);
   position: absolute;
-  top: calc(var(--offset) + 4px);
+  top: var(--offset);
   right: calc(var(--offset) + 28px);
   height: calc(var(--offset) + 23px);
+  color: var(--accent-color);
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  line-height: var(--line-height-lagre); 
+  font-weight: var(--font-weight-regular);
+  letter-spacing: 1.4px;
 }
 
 .header_decoration:after {
@@ -66,7 +71,7 @@
 .header__theme-menu {
   display: flex;
   justify-content: right;
-  margin: var(--theme-menu-offset) 0 var(--theme-menu-bottom) 0;
+  padding: var(--theme-menu-offset) 0 var(--theme-menu-bottom) 0;
 }
 
 .header__theme-menu-list {
@@ -76,9 +81,12 @@
   color: var(--accent-color);
 }
 
-
 .header__theme-menu-item {
-  border: 1px solid var(--accent-color);
+  position: relative;
+}
+
+.header__theme-menu-button_active {
+  border: none;
 }
 
 .header__theme-menu-button {
@@ -92,12 +100,10 @@
   padding: 0;
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-regular);
-  margin: 0 var(--theme-menu-button-offset) 0 var(--theme-menu-button-offset);
+  letter-spacing: 1.3px;
+  padding: 0 var(--theme-menu-button-offset) 0 var(--theme-menu-button-offset);
 }
 
-.header__theme-menu-button_active:active {
-  pointer-events: none;
-}
 
 .head_title {
   margin: 6px 0 var(--magrin-title-bottom) var(--magrin-title-left);
@@ -244,13 +250,28 @@
   line-height: 82.5%; /* 95.7px */
 }
 
-.header__theme-menu-item:hover {
-  border: 1px solid var(--theme-menu-color);
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
 
-.header__theme-menu-item:focus {
+.header__theme-menu-button:not(:active):hover {
+  box-shadow: 0 0 0 1px var(--accent-color-hover), 0 0 0 1px var(--accent-color-hover), 0 0 0 1px var(--accent-color-hover); /* Создаем обводку как у активной кнопки */
+}
+
+.header__theme-menu-item:focus{
   border: none;
   border-bottom: 1px solid var(--accent-color);
+}
+
+
+.header__theme-menu-button_active::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  right: 0px;
+  bottom: -7px;
+  border: 1px solid var(--accent-color); 
 }
 
 .container-fist_type:not(:first-of-type) {
@@ -327,6 +348,15 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+  .header__theme-menu-button_active::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    right: 0px;
+    bottom: -4px;
+    border: 1px solid var(--accent-color); 
+  }
 }
 
 @media (min-width: 1024px) {
@@ -383,5 +413,15 @@
 
   .footer__title {
     margin: 299px 257px 299px 256px;
+  }
+
+  .header__theme-menu-button_active::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid var(--accent-color); 
   }
 }

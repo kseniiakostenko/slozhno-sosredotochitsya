@@ -10,6 +10,7 @@
   --background-image-set: url(../images/cover-image-dark.png);
   --background-page-color: #000028;
   --accent-color: #ff0070;
+  --accent-color-hover: rgba(255, 0, 112, 0.4);
   --shadow-color: #ff0070;
   --head-color: #db00ff;
   --title-color: rgba(255, 0, 112, 1);
@@ -25,6 +26,7 @@
   --font-weight-regular: 400;
   --font-weight-wide: 700;
   --line-height-regular: 18px;
+  --line-height-lagre: 25px;
   --magrin-title-left: 0px;
   --magrin-title-bottom: 55px;
   --magrin-content-top: 40px;
@@ -45,14 +47,14 @@
     --offset: 20px;
     --magrin-content-top: 60px;
     --theme-menu-offset: 173px;
-    --theme-menu-bottom: 184px;
-    --theme-menu-gap: 13px;
+    --theme-menu-bottom: 172px;
+    --theme-menu-gap: 18px;
     --magrin-title-left: -20px;
     --magrin-title-bottom: 162px;
     --magin-content: 60px;
     --heading-bottom: 160px;
     --content-section-bottom: 79px;
-    --container-top: 19px;
+    --container-top: 18px;
     --container-gap: 17px;
     --text-block-top: 80px;
     --container-bottom: 51px;
@@ -61,8 +63,8 @@
 
 @media (min-width: 1024px) {
   :root {
-    --theme-menu-offset: 0px;
-    --theme-menu-bottom: 275px;
+    --theme-menu-offset: 3px;
+    --theme-menu-bottom: 270px;
     --magrin-title-bottom: 114px;
     --heading-bottom: 114px;
   }

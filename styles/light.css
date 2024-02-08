@@ -12,6 +12,7 @@
     --background-image-set: url(../images/cover-image-light.png);
     --head-color: #FFC2E6;
     --accent-color: #353430;
+    --accent-color-hover: rgba(50, 49, 45, 0.4);
     --title-color: rgba(255, 141, 203, 1);
     --background-color: #353430;
     --content-paragraf-color: #353430;
@@ -28,6 +29,7 @@
   --background-image-set: url(../images/cover-image-light.png);
   --head-color: #FFC2E6;
   --accent-color: #353430;
+  --accent-color-hover: rgba(50, 49, 45, 0.4);
   --title-color: rgba(255, 141, 203, 1);
   --background-color: #353430;
   --content-paragraf-color: #353430;

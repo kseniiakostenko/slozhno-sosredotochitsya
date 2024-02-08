@@ -7,6 +7,7 @@
 .page.theme_dark {
   --background-image-set: url(../images/cover-image-dark.png);
   --accent-color: #FF0070;
+  --accent-color-hover: rgba(255, 0, 112, 0.4);
   --shadow-color: #FF0070;
   --head-color: #DB00FF;
   --title-color: rgba(255, 0, 112, 1);
@@ -22,6 +23,7 @@
   :root {
     --background-image-set: url(../images/cover-image-dark.png);
     --accent-color: #FF0070;
+    --accent-color-hover: rgba(255, 0, 112, 0.4);
     --shadow-color: #FF0070;
     --head-color: #DB00FF;
     --title-color: rgba(255, 0, 112, 1);
