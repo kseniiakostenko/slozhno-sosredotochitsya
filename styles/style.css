@@ -85,7 +85,6 @@
 }
 
 .header__theme-menu-button_active {
-  border: none;
   pointer-events: none;
 }
 
@@ -261,9 +260,6 @@
   z-index: -1;
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-}
 
 .header__theme-menu-button:not(:active):hover {
   box-shadow: 0 0 0 1px var(--accent-color-hover);
