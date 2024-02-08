@@ -40,6 +40,10 @@
   --container-bottom: 40px;
   --container-gap: 5px;
   --text-block-top: 50px;
+  --button_active-top: -1px;
+  --button_active-left: 0px;
+  --button_active-right: 0px;
+  --button_active-bottom: -7px;
 }
 
 @media (min-width: 768px) {
@@ -58,6 +62,10 @@
     --container-gap: 17px;
     --text-block-top: 80px;
     --container-bottom: 51px;
+    --button_active-top: -3px;
+    --button_active-left: 0px;
+    --button_active-right: 0px;
+    --button_active-bottom: -4px;
   }
 }
 
@@ -67,5 +75,9 @@
     --theme-menu-bottom: 270px;
     --magrin-title-bottom: 114px;
     --heading-bottom: 114px;
+    --button_active-top: -3px;
+    --button_active-left: 0px;
+    --button_active-right: 0px;
+    --button_active-bottom: 0px;
   }
 }

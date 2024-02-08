@@ -96,7 +96,6 @@
   font-family: var(--main-font);
   display: inline-block;
   text-align: start;
-  padding: 0;
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-regular);
   letter-spacing: 1.3px;
@@ -245,10 +244,6 @@
   line-height: 82.5%; /* 95.7px */
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-}
-
 .header__theme-menu-button:not(:active):hover {
   box-shadow: 0 0 0 1px var(--accent-color-hover),
     0 0 0 1px var(--accent-color-hover), 0 0 0 1px var(--accent-color-hover); /* Создаем обводку как у активной кнопки */
@@ -262,10 +257,10 @@
 .header__theme-menu-button_active::before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: 0px;
-  right: 0px;
-  bottom: -7px;
+  top: var(--button_active-top);
+  left: var(--button_active-left);
+  right: var(--button_active-right);
+  bottom: var(--button_active-bottom);
   border: 1px solid var(--accent-color);
 }
 
@@ -341,16 +336,6 @@
     margin: 443px 184px 442px 184px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
-  .header__theme-menu-button_active::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: 0px;
-    right: 0px;
-    bottom: -4px;
-    border: 1px solid var(--accent-color);
-  }
 }
 
 @media (min-width: 1024px) {
@@ -407,15 +392,5 @@
 
   .footer__title {
     margin: 299px 257px 299px 256px;
-  }
-
-  .header__theme-menu-button_active::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    border: 1px solid var(--accent-color);
   }
 }
