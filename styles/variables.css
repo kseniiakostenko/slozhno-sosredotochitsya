@@ -20,8 +20,8 @@
   --accent-font: "STIX Two Text";
   --offset: 10px;
   --theme-menu-offset: 66px;
-  --theme-menu-gap: 17px;
-  --theme-menu-bottom: 66px;
+  --theme-menu-gap: 13px;
+  --theme-menu-bottom: 63px;
   --theme-menu-button-offset: 13px;
   --font-weight-regular: 400;
   --font-weight-wide: 700;
@@ -38,12 +38,17 @@
   --heading-bottom: 56px;
   --container-top: 10px;
   --container-bottom: 40px;
-  --container-gap: 5px;
+  --container-gap: 10px;
   --text-block-top: 50px;
   --button_active-top: -1px;
   --button_active-left: 0px;
   --button_active-right: 0px;
-  --button_active-bottom: -7px;
+  --button_active-bottom: -2px;
+  --height-image1: 142px;
+  --height-image2: 355px;
+  --height-image3: 237px;
+  --height-image4: 355px;
+  --height-image5: 237px;
 }
 
 @media (min-width: 768px) {
@@ -52,25 +57,32 @@
     --magrin-content-top: 60px;
     --theme-menu-offset: 173px;
     --theme-menu-bottom: 172px;
-    --theme-menu-gap: 18px;
+    --theme-menu-gap: 12px;
     --magrin-title-left: -20px;
     --magrin-title-bottom: 162px;
     --magin-content: 60px;
     --heading-bottom: 160px;
     --content-section-bottom: 79px;
-    --container-top: 18px;
-    --container-gap: 17px;
+    --container-top: 21px;
+    --container-gap: 20px;
     --text-block-top: 80px;
-    --container-bottom: 51px;
+    --container-bottom: 60px;
     --button_active-top: -3px;
     --button_active-left: 0px;
     --button_active-right: 0px;
     --button_active-bottom: -4px;
+    --height-image1: 192px;
+    --height-image2: 411px;
+    --height-image3: 568px;
+    --height-image4: 230px;
+    --height-image5: 318px;
   }
 }
 
 @media (min-width: 1024px) {
   :root {
+    --container-top: 19px;
+    --theme-menu-gap: 18px;
     --theme-menu-offset: 3px;
     --theme-menu-bottom: 270px;
     --magrin-title-bottom: 114px;
@@ -79,5 +91,10 @@
     --button_active-left: 0px;
     --button_active-right: 0px;
     --button_active-bottom: 0px;
+    --height-image1: 260px;
+    --height-image2: 595px;
+    --height-image3: 768px;
+    --height-image4: 315px;
+    --height-image5: 428px;
   }
 }
