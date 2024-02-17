@@ -322,31 +322,11 @@
       "image3 image4 image2"
       "image3 image5 image5";
   }
-
-  .block--1 {
-    grid-area: image1;
-    max-height: var(--height-image1);
-  }
   
   .block--2 {
-    grid-area: image2;
     max-height: none;
   }
   
-  .block--3 {
-    grid-area: image3;
-    max-height: var(--height-image3);
-  }
-  
-  .block--4 {
-    grid-area: image4;
-    max-height: var(--height-image4);
-  }
-  
-  .block--5 {
-    grid-area: image5;
-    max-height: var(--height-image5);
-  }
 
   .container-content {
     width: 100%;
