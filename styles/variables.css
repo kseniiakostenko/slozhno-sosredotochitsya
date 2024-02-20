@@ -4,7 +4,7 @@
 */
 
 :root {
-  --main-font: "IBM Plex Mono";
+  --main-font: "IBM Plex Mono", monospace;
   --font-size-main: 18px;
   --font-size-footer: 116px;
   --background-image-set: url(../images/cover-image-dark.png);
@@ -37,13 +37,14 @@
   --decoration-size: 9px;
   --heading-bottom: 56px;
   --container-top: 10px;
-  --container-bottom: 40px;
-  --container-gap: 10px;
+  --container-bottom: 36px;
+  --container-gap: 6px;
   --text-block-top: 50px;
   --button_active-top: -1px;
   --button_active-left: 0px;
   --button_active-right: 0px;
   --button_active-bottom: -2px;
+  --container-offset: 10px;
   --height-image1: 142px;
   --height-image2: 355px;
   --height-image3: 237px;
@@ -71,6 +72,7 @@
     --button_active-left: 0px;
     --button_active-right: 0px;
     --button_active-bottom: -4px;
+    --container-offset: 12px;
     --height-image1: 192px;
     --height-image2: 411px;
     --height-image3: 568px;
@@ -91,6 +93,7 @@
     --button_active-left: 0px;
     --button_active-right: 0px;
     --button_active-bottom: 0px;
+    --container-offset: 10px;
     --height-image1: 260px;
     --height-image2: 595px;
     --height-image3: 768px;

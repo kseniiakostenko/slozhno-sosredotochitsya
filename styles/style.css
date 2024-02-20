@@ -11,9 +11,11 @@
 
 .header {
   width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   padding: var(--offset);
   position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .header_decoration::before {
@@ -68,9 +70,17 @@
 }
 
 .header__theme-menu {
+  grid-row: 1;
   display: flex;
   justify-content: right;
-  padding: var(--theme-menu-offset) 0 var(--theme-menu-bottom) 0;
+  justify-self: end;
+  align-self: center;
+}
+
+.head_title {
+  grid-row: 2;
+  justify-self: start;
+  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -103,8 +113,11 @@
   padding: 0 var(--theme-menu-button-offset) 5px var(--theme-menu-button-offset);
 }
 
-.head_title {
-  margin: 6px 0 var(--magrin-title-bottom) var(--magrin-title-left);
+.header .heading {
+  display: grid;
+  grid-row: 3;
+  justify-self: end;
+  align-self: center;
 }
 
 .content__title {
@@ -134,16 +147,16 @@
 
 .content {
   color: var(--accent-color);
-  padding: var(--magrin-content-top) var(--offset) var(--magrin-conten-bottom)
+  margin: var(--magrin-content-top) var(--offset) var(--magrin-conten-bottom)
     var(--offset);
 }
 
-.content-section {
-  margin: 0 0 var(--content-section-bottom) 0;
+.container-images {
+  margin: var(--content-section-bottom) 0 0 0;
 }
 
 .container {
-  padding: var(--container-top) 0 var(--container-bottom) 0;
+  padding: calc(var(--container-top) - var(--container-offset)) 0 var(--container-bottom) 0;
   width: 100%;
   display: grid;
   gap: var(--container-gap);
@@ -158,27 +171,27 @@
 
 .block--1 {
   grid-area: image1;
-  max-height: var(--height-image1);
+  max-height: auto;
 }
 
 .block--2 {
   grid-area: image2;
-  max-height: var(--height-image2);
+  max-height: auto;
 }
 
 .block--3 {
   grid-area: image3;
-  max-height: var(--height-image3);
+  max-height: auto;
 }
 
 .block--4 {
   grid-area: image4;
-  max-height: var(--height-image4);
+  max-height: auto;
 }
 
 .block--5 {
   grid-area: image5;
-  max-height: var(--height-image5);
+  max-height: auto;
 }
 
 .container-second_type {
@@ -194,7 +207,7 @@
   line-height: 23.4px; /* 130% */
 }
 
-.content-section .heading {
+.content .heading {
   margin: 20px 0 10px 0;
 }
 
@@ -237,6 +250,9 @@
   min-height: 100vh;
   padding: var(--offset);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__title {
@@ -267,9 +283,8 @@
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--accent-color); /* Граница только снизу */
+  border-bottom: 1px solid var(--accent-color);
 }
-
 
 .header__theme-menu-button:not(:active):hover {
   box-shadow: 0 0 0 1px var(--accent-color-hover);
@@ -281,10 +296,6 @@
 
 .container-fist_type:not(:first-of-type) {
   margin: var(--text-block-top) 0 0 0;
-}
-
-.header .heading:last-of-type {
-  margin: 0 0 var(--heading-bottom) auto;
 }
 
 .title-heading:not(:first-of-type) {
@@ -314,7 +325,13 @@
     gap: 24px;
   }
 
+  .head_title {
+    position: relative;
+    left: calc(-1 * var(--offset));
+  }
+
   .container {
+    padding: calc(var(--container-top) - var(--container-offset)) 0 var(--container-bottom) 0;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -322,11 +339,26 @@
       "image3 image4 image2"
       "image3 image5 image5";
   }
-  
+
+  .block--1 {
+    max-height: var(--height-image1);
+  }
+
   .block--2 {
     max-height: none;
   }
-  
+
+  .block--3 {
+    max-height: var(--height-image3);
+  }
+
+  .block--4 {
+    max-height: var(--height-image4);
+  }
+
+  .block--5 {
+    max-height: var(--height-image5);
+  }
 
   .container-content {
     width: 100%;
@@ -344,22 +376,22 @@
     width: 236px;
   }
 
-  .content-section {
-    margin: 0 0 79px 0;
-  }
-
   .container_picture {
     height: 100%;
   }
 
   .footer__title {
-    margin: 443px 184px 442px 184px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 @media (min-width: 1024px) {
   .header__theme-menu {
+    grid-row: 1;
+    justify-self: center;
+    align-self: flex-start;
+    position: relative;
+    top: 2px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 23px;
@@ -419,9 +451,5 @@
     min-height: 100vh;
     padding: var(--offset);
     position: relative;
-  }
-
-  .footer__title {
-    margin: 299px 257px 299px 256px;
   }
 }

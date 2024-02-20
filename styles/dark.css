@@ -19,21 +19,5 @@
   --background-page-color: #000028;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-image-set: url(../images/cover-image-dark.png);
-    --accent-color: #FF0070;
-    --accent-color-hover: rgba(255, 0, 112, 0.4);
-    --shadow-color: #FF0070;
-    --head-color: #DB00FF;
-    --title-color: rgba(255, 0, 112, 1);
-    --content-paragraf-color: #F1B2CE;
-    --link-shadow: #FF0070;
-    --background-color: #000028;
-    --decoration-visibility: visible;
-    --theme-menu-color: rgba(255, 0, 112, 0.40);
-    --background-page-color: #000028;
-    }
-  }
 
 
